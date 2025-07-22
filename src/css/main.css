@@ -1800,10 +1800,6 @@ header .header-logo a {
   min-height: 696px;
   text-align: center;
   background-color: white;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px; /* grid cell size */
 }
 #about .about-wrap {
   max-width: 850px;
@@ -2300,10 +2296,6 @@ header .header-logo a {
   padding: 12rem 0 7.8rem;
   text-align: center;
   background-color: white;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px; /* grid cell size */
 }
 #testimonials h2 {
   font-family: "montserrat-bold", sans-serif;
