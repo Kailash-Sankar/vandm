@@ -2521,7 +2521,6 @@ header .header-logo a {
 #clients .owl-carousel .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
 #clients .owl-carousel .owl-dots .owl-dot span {
   width: 9px;
