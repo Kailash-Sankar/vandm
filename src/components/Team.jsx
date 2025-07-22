@@ -1,5 +1,7 @@
 
 import React from 'react';
+import vidyaImage from '../images/avatars/vidya.jpg';
+import mayaImage from '../images/avatars/maya.jpg';
 
 const Team = () => {
   return (
@@ -18,7 +20,7 @@ const Team = () => {
                 In the entire professional career, she has demonstrated adaptive problem solving skills and has managed complexity across client profiles her through logical partnering and collaboration. Strong influencing skills, obsessive positivity, clear and crisp communication have been her greatest strengths and assets throughout these years.
               </p>
               <div className="testimonial-author">
-                <img src="/src/images/avatars/vidya.jpg" alt="Author image" />
+                <img src={vidyaImage} alt="Author image" />
                 <div className="author-info">
                   Vidya Unni
                   <span className="position">CEO and Director</span>
@@ -32,7 +34,7 @@ const Team = () => {
                 Been part of HR related projects with established organisations and well as budding start-ups.
               </p>
               <div className="testimonial-author">
-                <img src="/src/images/avatars/maya.jpg" alt="Author image" />
+                <img src={mayaImage} alt="Author image" />
                 <div className="author-info">
                   Maya P
                   <span>COO and Director</span>
