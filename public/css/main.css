@@ -1250,7 +1250,7 @@ header .row {
  * ------------------------------------------------------------------- */
 header .header-logo {
   position: absolute;
-  left: 32px;
+  right: 32px;
   top: 42px;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -1284,7 +1284,7 @@ header .header-logo a {
 #header-menu-trigger {
   display: block;
   position: fixed;
-  right: 32px;
+  left: 20px;
   top: 30px;
   height: 42px;
   width: 42px;
@@ -1361,16 +1361,10 @@ header .header-logo a {
   height: 100%;
   width: 240px;
   position: fixed;
-  right: 0;
-  top: 0;
-  visibility: hidden;
+  left: 0px;
+  top: 0px;
   overflow-y: auto;
   z-index: 800;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1803,9 +1797,13 @@ header .header-logo a {
 #about {
   position: relative;
   padding: 4.2rem 0 12rem;
-  background-color: #FFFFFF;
   min-height: 696px;
   text-align: center;
+  background-color: white;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid cell size */
 }
 #about .about-wrap {
   max-width: 850px;
@@ -1959,10 +1957,19 @@ header .header-logo a {
 #services .services-list {
   margin-top: 1.2rem;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 #services .services-list .service-item {
-  margin-bottom: 3rem;
-  padding: 0 50px;
+  padding: 10px;
+  background-color: #eff2f58c;
+  border-radius: 25px;
+  flex: 1 1 calc(50% - 8px); /* 2 items per row with gap considered */
+  box-sizing: border-box;
+  min-width: 200px; /* prevents shrinking too small on narrow screens */
+  border: 1px solid #d3484d8f;
 }
 #services .services-list .service-item p {
   color: rgba(242, 242, 242, 0.5);
@@ -2290,9 +2297,13 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #testimonials {
-  background: #FFFFFF;
   padding: 12rem 0 7.8rem;
   text-align: center;
+  background-color: white;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid cell size */
 }
 #testimonials h2 {
   font-family: "montserrat-bold", sans-serif;
